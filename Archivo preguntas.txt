@@ -1,0 +1,14 @@
+¿Es vertebrado?
+¿Es carnivoro?
+¿Es herviboro?
+¿Es insectivoro?
+¿Puede nadar?
+¿Camina en 4 patas?
+¿Camina en 2 patas?
+¿Tiene pelo?
+¿Tiene plumas?
+¿Es domestico?
+¿Tiene cola?
+¿Tiene aletas?
+¿Da leche?
+¿Pone huevos?

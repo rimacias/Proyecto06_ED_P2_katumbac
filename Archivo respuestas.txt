@@ -1,0 +1,5 @@
+animal_name,hair,feathers,eggs,milk
+Aguila si si no no no no si si si no no no no si
+Cerdo si no no no no si no si no si si no no no
+Pulpo no no no no si no no no no no no no no si
+Rana si no no si si si no no no no no no no no

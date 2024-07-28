@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="423.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.p_grupo06.PrimaryyController">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="552.0" layoutX="12.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../juego.png" />
+         </image>
+      </ImageView>
+      <VBox alignment="CENTER" layoutX="6.0" layoutY="134.0" prefHeight="201.0" prefWidth="400.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="39.0" prefWidth="400.0">
+               <children>
+                  <TextField fx:id="preg" prefHeight="25.0" prefWidth="155.0" />
+                  <Button fx:id="btnOk" mnemonicParsing="false" onMouseClicked="#btnOk" text="OK">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="btninfo" mnemonicParsing="false" onAction="#bInfo" text="?">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="32.0" prefWidth="400.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Responde ">
+                     <font>
+                        <Font name="Arial Narrow Italic" size="18.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin>
+                  </Text>
+                  <Label fx:id="nPreguntas" text="n" textFill="#ee5c5c">
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Bodoni MT Bold" size="25.0" />
+                     </font>
+                  </Label>
+                  <Text layoutX="10.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="pregunta/s">
+                     <font>
+                        <Font name="Arial Narrow Italic" size="18.0" />
+                     </font>
+                  </Text>
+               </children>
+            </HBox>
+            <HBox fx:id="HBoxP" alignment="CENTER" prefHeight="100.0" prefWidth="200.0" visible="false">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="89.0" prefWidth="368.0">
+                     <children>
+                        <Label fx:id="lblPreguntas" text="Aquí van ir apareciendo las preguntas">
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label fx:id="lblTurespuesta" text="Tu respuesta:  " />
+                        <Label fx:id="lblrespuesta">
+                           <graphic>
+                              <HBox alignment="CENTER" prefHeight="60.0" prefWidth="198.0">
+                                 <children>
+                                    <Button fx:id="btnSi" mnemonicParsing="false" prefHeight="25.0" prefWidth="36.0" text="SI">
+                                       <HBox.margin>
+                                          <Insets right="20.0" />
+                                       </HBox.margin>
+                                       <effect>
+                                          <Reflection />
+                                       </effect>
+                                    </Button>
+                                    <Button fx:id="btnNo" mnemonicParsing="false" text="NO">
+                                       <effect>
+                                          <Reflection />
+                                       </effect>
+                                    </Button>
+                                 </children>
+                              </HBox>
+                           </graphic>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <HBox prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <TextArea fx:id="prueba" prefHeight="24.0" prefWidth="121.0" visible="false" />
+         </children></HBox>
+      <Button fx:id="btnSalir" layoutX="186.0" layoutY="341.0" mnemonicParsing="false" onMouseClicked="#Salir" text="SALIR">
+         <effect>
+            <Reflection />
+         </effect>
+      </Button>
+   </children>
+</AnchorPane>
